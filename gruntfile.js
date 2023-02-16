@@ -22,7 +22,7 @@ module.exports = function (grunt) {
         watch: {
             lecleass: {
                 files: {
-                    files: ['src/styles/**/*.less'],
+                    files: ['src/styles/*.less'],
                     tasks: ['less']
                 }
             },
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
                     patterns: [
                         {
                             match: 'ENDERECO_DO_CSS',
-                            replacement: 'dev/styles/main.css'
+                            replacement: './styles/main.css'
                         }
                     ]
                 },
@@ -69,7 +69,7 @@ module.exports = function (grunt) {
                     patterns: [
                         {
                             match: 'ENDERECO_DO_CSS',
-                            replacement: 'dist/styles/main.min.css'
+                            replacement: './styles/main.min.css'
                         }
                     ]
                 },
