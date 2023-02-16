@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         less: {
             development: {
                 files: {
-                    './dev/styles/main.css': './src/styles/main.less'
+                    './dev/styles/main.css': './src/styles/main.less',
                 }
             },
             production: {
@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                     compress: true,
                 },
                 files: {
-                    './dist/styles/main.min.css': './src/styles/main.less'
+                    './dist/styles/main.min.css': './src/styles/main.less',
                 }
             }
         },
