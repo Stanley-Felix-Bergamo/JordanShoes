@@ -1,0 +1,24 @@
+{
+  "name": "stanleyshoes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "build": "grunt build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stanley-Felix-Bergamo/StanleyShoes.git"
+  },
+  "author": "Stanley-Felix-Bergamo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stanley-Felix-Bergamo/StanleyShoes/issues"
+  },
+  "homepage": "https://github.com/Stanley-Felix-Bergamo/StanleyShoes#readme",
+  "devDependencies": {
+    "grunt": "^1.6.1"
+  }
+}
