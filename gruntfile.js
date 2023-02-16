@@ -14,21 +14,21 @@ module.exports = function (grunt) {
                     compress: true,
                 },
                 files: {
-                    './dist/styles/main.min.css': './src/styles/main.less'
+                    'dist/styles/main.min.css': 'src/styles/main.less'
                 }
             }
         },
 
         watch: {
-            less: {
+            lecleass: {
                 files: {
-                    files: ['./src/styles/**/*.less'],
-                    tasks: ['less:development']
+                    files: ['src/styles/**/*.less'],
+                    tasks: ['less']
                 }
             },
             html: {
-                files: ['./src/index.html'],
-                tasks: ['replace:dev']
+                files: ['src/index.html'],
+                tasks: ['replace']
             }
         },
 
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
                     patterns: [
                         {
                             match: 'ENDERECO_DO_CSS',
-                            replacement: './dev/styles/main.css'
+                            replacement: 'dev/styles/main.css'
                         }
                     ]
                 },
@@ -58,8 +58,8 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         flatten: true,
-                        src: ['./src/index.html'],
-                        dest: './dev'
+                        src: ['src/index.html'],
+                        dest: 'dev/'
                     }
                 ]
             },
@@ -69,7 +69,7 @@ module.exports = function (grunt) {
                     patterns: [
                         {
                             match: 'ENDERECO_DO_CSS',
-                            replacement: './dist/styles/main.min.css'
+                            replacement: 'dist/styles/main.min.css'
                         }
                     ]
                 },
@@ -78,18 +78,19 @@ module.exports = function (grunt) {
                         expand: true,
                         flatten: true,
                         src: ['prebuild/index.min.html'],
-                        dest: './dist'
+                        dest: 'dist/'
                     }
                 ]
             }
         },
+
         imagemin: {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: './src/images',
+                    cwd: 'src/images',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: './dist/images'
+                    dest: 'dist/images'
                 }]
             }
         },
