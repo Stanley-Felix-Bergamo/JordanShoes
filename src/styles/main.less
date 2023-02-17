@@ -119,3 +119,31 @@
         }
     }
 }
+
+.destaque {
+    padding-top: 50px;
+    text-align: center;
+
+    &__titulo {
+        padding-bottom: 17px;
+        font-size: 32px;
+        font-weight: 600;
+        color: @colorGray-2;
+    }
+
+    &__texto {
+        font-size: 20px;
+        font-weight: 500;
+        color: @colorGray-1;
+    }
+
+    @media(max-width:768px) {
+        &__titulo {
+            font-size: 28px;
+        }
+
+        &__texto {
+            font-size: 16px;
+        }
+    }
+}
