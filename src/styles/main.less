@@ -1,5 +1,7 @@
-@import'./_variables.less';
-
+@colorWhite-1: #F9F9F9;
+@colorWhite-2: #EBE9EA;
+@colorGray-1: #474747;
+@colorGray-2: #181818;
 
 
 * {
@@ -9,5 +11,111 @@
     text-decoration: none;
     list-style: none;
     font-family: Montserrat, sans-serif;
+}
 
+.container--hero {
+    width: 100%;
+    max-width: 690px;
+}
+
+.header {
+    &__promocao {
+        background-color: @colorGray-2;
+        text-align: center;
+        cursor: pointer;
+
+        &__text {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 20px 0;
+            color: @colorWhite-1;
+        }
+    }
+
+    &__logo {
+        background-color: @colorWhite-1;
+        text-align: center;
+
+        &__text {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 15px 0;
+            color: @colorGray-2;
+        }
+
+    }
+
+    &__hero {
+        position: relative;
+        background-image: url(../../dist/images/wallpaper-desk.png);
+        height: 378px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: @colorWhite-1;
+        padding: 104px 100px 113px 100px;
+
+        &::before {
+            position: absolute;
+            height: 378px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            content: '';
+            background-color: @colorGray-2;
+            opacity: 0.6;
+        }
+
+        &__titulo {
+            position: relative;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 58.51px;
+        }
+
+        &__texto {
+            position: relative;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    @media(max-width:768px) {
+        &__promocao {
+            &__text {
+                padding: 15px 0;
+            }
+        }
+
+        &__logo {
+            &__text {
+                padding: 6px 0;
+            }
+        }
+
+        &__hero {
+            background-image: url(../../dist/images/wallpaper-mobi.png);
+            height: 414px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: @colorWhite-1;
+            padding: 122px 37px 122px 20px;
+
+            &::before {
+                height: 414px;
+            }
+
+            &__titulo {
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 34.13px;
+            }
+
+            &__texto {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
 }
