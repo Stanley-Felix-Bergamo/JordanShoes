@@ -13,10 +13,30 @@
     font-family: Montserrat, sans-serif;
 }
 
-.container--hero {
+
+.container {
     width: 100%;
-    max-width: 690px;
+    max-width: 890px;
+    padding: 104px 100px 113px 100px;
 }
+
+.container-2 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+
+
+    @media(max-width:768px) {
+        max-width: 80%;
+    }
+
+    @media(max-width:1024px) {
+        max-width: 90%;
+    }
+
+}
+
+
 
 .header {
     &__promocao {
@@ -53,7 +73,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         color: @colorWhite-1;
-        padding: 104px 100px 113px 100px;
 
         &::before {
             position: absolute;
@@ -71,6 +90,7 @@
             font-size: 48px;
             font-weight: 600;
             line-height: 58.51px;
+            padding-bottom: 26px;
         }
 
         &__texto {
@@ -100,7 +120,10 @@
             background-size: cover;
             background-repeat: no-repeat;
             color: @colorWhite-1;
-            padding: 122px 37px 122px 20px;
+
+            .container {
+                padding: 122px 37px 122px 20px;
+            }
 
             &::before {
                 height: 414px;
@@ -110,6 +133,7 @@
                 font-size: 28px;
                 font-weight: 700;
                 line-height: 34.13px;
+                padding-bottom: 12px;
             }
 
             &__texto {
@@ -121,6 +145,7 @@
 }
 
 .destaque {
+    background-color: @colorWhite-1;
     padding-top: 50px;
     text-align: center;
 
@@ -144,6 +169,57 @@
 
         &__texto {
             font-size: 16px;
+        }
+    }
+}
+
+.shoes {
+    background-color: @colorWhite-1;
+    padding-top: 65px;
+
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+
+
+        &__item {
+            background-color: @colorWhite-2;
+
+
+            &__img {
+                width: 240px;
+            }
+        }
+
+    }
+
+
+
+    @media(max-width:1024px) {
+        &__list {
+            &__item {
+                background-color: @colorWhite-2;
+
+                &__img {
+                    width: 190px;
+                }
+            }
+        }
+    }
+
+    @media(max-width:768px) {
+        &__list {
+            &__item {
+                background-color: @colorWhite-2;
+
+                &__img {
+                    width: 250px;
+                }
+            }
         }
     }
 }
