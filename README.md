@@ -1,6 +1,9 @@
 # JordanShoes <img align="right" src="https://img.shields.io/static/v1?label=STATUS&message=Está %20Em Andamento &color=red&style=for-the-badge"/>
 
-
+<div align="center" >
+    <img width="725rem" src="https://servidor-estaticos-ten.vercel.app/shoes.png" alt="imagem">
+</div> 
+<br>
 
 
 <h2>💻 Tecnologias utilizadas</h2>
