@@ -4,6 +4,7 @@
     <img width="725rem" src="https://servidor-estaticos-ten.vercel.app/shoes.png" alt="imagem">
 </div> 
 <br>
+
 > Para ver o projeto rodando você pode acessar este [Link](https://jordan-shoes-sage.vercel.app/).
 
 <h2>💻 Tecnologias utilizadas</h2>
